@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات ما</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .service {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        a {
+            display: block;
+            margin: 20px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>خدمات ما</h1>
+    <div class="service">
+        <h2>فروش فالوور اینستاگرام</h2>
+        <p>افزایش فالوور باکیفیت و واقعی</p>
+        <a href="#">سفارش دهید</a>
+    </div>
+    <div class="service">
+        <h2>فروش لایک اینستاگرام</h2>
+        <p>لایک پست‌های شما در کمترین زمان</p>
+        <a href="#">سفارش دهید</a>
+    </div>
+    <div class="service">
+        <h2>خدمات کامنت</h2>
+        <p>کامنت‌های سفارشی و دلخواه</p>
+        <a href="#">سفارش دهید</a>
+    </div>
+</body>
+</html>
+<h2>ثبت سفارش</h2>
+<form action="submit_order.php" method="POST">
+    <input type="text" name="name" placeholder="نام شما" required>
+    <input type="text" name="service" placeholder="خدمت مورد نظر" required>
+    <input type="text" name="phone" placeholder="شماره تماس" required>
+    <button type="submit">ارسال</button>
+</form>
+<style>
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input, button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    button {
+        background: #007BFF;
+        color: #fff;
+        border: none;
+    }
+</style>
+<button onclick="window.location.href='confirm.html'">سفارش دهید</button>

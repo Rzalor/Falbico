@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>ورود به حساب</h2>
+        <form action="#" method="POST" id="loginForm">
+            <input type="text" name="username" id="username" placeholder="نام کاربری" required>
+            <input type="password" name="password" id="password" placeholder="رمز عبور" required>
+            <button type="submit">ورود</button>
+        </form>
+        <div class="form-footer">
+            <p>حساب کاربری ندارید؟ <a href="signup.html">ثبت‌نام کنید</a></p>
+            <p><a href="#">فراموشی رمز عبور</a></p>
+        </div>
+    </div>
+
+    <script>
+        // اعتبارسنجی فرم ورود
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === "" || password === "") {
+                alert("لطفاً تمام فیلدها را پر کنید.");
+            } else {
+                alert("ورود موفقیت‌آمیز!");
+                // بعد از ورود موفق می‌توانید کاربر را به صفحه‌ای هدایت کنید:
+                // window.location.href = "dashboard.html";
+            }
+        });
+    </script>
+</body>
+</html>
